@@ -133,6 +133,7 @@ export class InitTemplate {
         // Ignore
         continue;
       } else {
+        // TODO: Work out if this is where the various template files need to be made writable to work from Nix:
         await fs.copy(fromFile, toFile);
       }
     }
